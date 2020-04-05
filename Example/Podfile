@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'BridgeResource_Example' do
+  pod 'BridgeResource', :path => '../'
+
+  target 'BridgeResource_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
