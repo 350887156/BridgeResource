@@ -1,0 +1,6 @@
+framework module BridgeResource {
+  umbrella header "BridgeResource-umbrella.h"
+
+  export *
+  module * { export * }
+}

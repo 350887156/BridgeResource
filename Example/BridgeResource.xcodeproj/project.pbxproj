@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		3CAD1592184516966247458E /* Pods-BridgeResource_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BridgeResource_Tests.release.xcconfig"; path = "Target Support Files/Pods-BridgeResource_Tests/Pods-BridgeResource_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		5035C5ABAB3782A669C1E50E /* BridgeResource.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = BridgeResource.podspec; path = ../BridgeResource.podspec; sourceTree = "<group>"; };
+		5035C5ABAB3782A669C1E50E /* BridgeResource.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = BridgeResource.podspec; path = ../BridgeResource.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6003F58A195388D20070C39A /* BridgeResource_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BridgeResource_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,10 +63,10 @@
 		72F8C3B881629F8B9D7B9184 /* Pods-BridgeResource_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BridgeResource_Example.release.xcconfig"; path = "Target Support Files/Pods-BridgeResource_Example/Pods-BridgeResource_Example.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D38016CBB078134419D1499 /* Pods_BridgeResource_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BridgeResource_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9E939B642AF0F63B9AEED6D4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		9E939B642AF0F63B9AEED6D4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B153DB1113C59DD48E416095 /* Pods-BridgeResource_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BridgeResource_Tests.debug.xcconfig"; path = "Target Support Files/Pods-BridgeResource_Tests/Pods-BridgeResource_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		BBAF548BB0FE9D75DAB99589 /* Pods-BridgeResource_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BridgeResource_Example.debug.xcconfig"; path = "Target Support Files/Pods-BridgeResource_Example/Pods-BridgeResource_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		DAE9DA21CB78DE7EDF27EFA6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		DAE9DA21CB78DE7EDF27EFA6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,6 @@
 				B153DB1113C59DD48E416095 /* Pods-BridgeResource_Tests.debug.xcconfig */,
 				3CAD1592184516966247458E /* Pods-BridgeResource_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -248,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "350887156@qq.com";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = J6Z3H2NHLX;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,6 +260,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -494,13 +497,16 @@
 			baseConfigurationReference = BBAF548BB0FE9D75DAB99589 /* Pods-BridgeResource_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J6Z3H2NHLX;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BridgeResource/BridgeResource-Prefix.pch";
 				INFOPLIST_FILE = "BridgeResource/BridgeResource-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -510,13 +516,16 @@
 			baseConfigurationReference = 72F8C3B881629F8B9D7B9184 /* Pods-BridgeResource_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J6Z3H2NHLX;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BridgeResource/BridgeResource-Prefix.pch";
 				INFOPLIST_FILE = "BridgeResource/BridgeResource-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

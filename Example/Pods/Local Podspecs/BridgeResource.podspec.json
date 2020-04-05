@@ -1,0 +1,22 @@
+{
+  "name": "BridgeResource",
+  "version": "0.1.0",
+  "summary": "A short description of BridgeResource.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/350887156@qq.com/BridgeResource",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "350887156@qq.com": "350887156@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/350887156@qq.com/BridgeResource.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "BridgeResource/Classes/**/*"
+}

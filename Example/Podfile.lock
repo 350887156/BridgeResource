@@ -1,0 +1,16 @@
+PODS:
+  - BridgeResource (0.1.0)
+
+DEPENDENCIES:
+  - BridgeResource (from `../`)
+
+EXTERNAL SOURCES:
+  BridgeResource:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BridgeResource: c5b26633bc51e7c18e40c4af69ab2bb6f1a4034f
+
+PODFILE CHECKSUM: d41d28da714687e25af7369aba1a1193018123df
+
+COCOAPODS: 1.9.0
